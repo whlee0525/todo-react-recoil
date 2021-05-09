@@ -31,12 +31,19 @@ export default function TodayTodoInput() {
     setInputData('');
   }
 
+  const handleEnter = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter') {
+      handleClick();
+    }
+  }
+
   return (
     <>
       <StyledInput
         placeholder="What's my plan?"
         value={inputData}
         onChange={e => setInputData(e.target.value)}
+        onKeyPress={handleEnter}
       />
       <StyledButton onClick={handleClick} >Do!</StyledButton>
     </>

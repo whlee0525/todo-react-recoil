@@ -17,12 +17,23 @@ export default function TodayTodoList() {
 
   const { todos, setTodos } = useContext(DataContext);
 
-  // const handleClick = (selectedId) => setTodos(prev => prev.filter(({id})=> id !== selectedId));
+  const handleRemove = (selectedId: number) =>
+    setTodos(prev => prev.filter(({ id }) => id !== selectedId));
+
+  const handleDone = (selectedId: number) =>
+    setTodos(prev =>
+      prev.map(todo => (todo.id === selectedId) ? { ...todo, done: !todo.done } : todo));
 
   return (
     <StyledWrapper>
       {!todos.length && 'No todos'}
-      {todos.map(line => <TodayTodoLine key={line.id} {...line} />)}
+      {todos.map(line =>
+        <TodayTodoLine
+          key={line.id}
+          onRemove={() => handleRemove(line.id)}
+          onDone={() => handleDone(line.id)}
+          {...line}
+        />)}
     </StyledWrapper>
   );
 }
