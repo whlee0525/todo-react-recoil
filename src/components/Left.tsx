@@ -14,12 +14,12 @@ const StyledLeft = styled.div`
 
 
 export default function Left() {
-    return (
-        <StyledLeft>
-            <h1>Feeling</h1>
-            <br />
-            <TodayColorSelects />
-            <TodayColorSelected />
-        </StyledLeft>
-    );
+  return (
+    <StyledLeft>
+      <h1>Feeling</h1>
+      <br />
+      <TodayColorSelects />
+      <TodayColorSelected />
+    </StyledLeft>
+  );
 }
