@@ -1,9 +1,12 @@
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
+import { DataContext } from './DataContext';
 import Left from './components/Left';
 import Right from './components/Right';
+import Title from './components/Title';
 
-const StyledApp = styled.div`
+const AppWrapper = styled.div`
   width: 1080px;
   min-height: 720px;
   margin-top: 100px;
@@ -12,18 +15,31 @@ const StyledApp = styled.div`
   background-color: #dce0e1;
 
   padding: 50px 0;
+  text-align: center;
+`;
+
+const MainContent = styled.div`
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-
 `;
 
 export default function App() {
   console.log('app');
+
+  const [color, setColor] = useState('white');
+  const [todos, setTodos] = useState([]);
+
   return (
-    <StyledApp>
-      <Left/>
-      <Right />
-    </StyledApp>
+    <AppWrapper>
+      <Title />
+      <DataContext.Provider value={{ color, setColor, todos, setTodos }} >
+        <MainContent>
+          <Left />
+          <Right />
+        </MainContent>
+      </DataContext.Provider>
+    </AppWrapper>
   );
 };

@@ -1,17 +1,20 @@
-import React from 'react'
-import styled from 'styled-components'
+  import React, { useContext } from 'react'
+  import styled from 'styled-components'
 
-const StyledWrapper = styled.div`
-  margin-top: 50px;
-  width: 100%;
-  height: 70px;
-  background-color: ${({ color }) => color ? `${color};` : `white;`};
-`
+  import { DataContext } from '../DataContext';
 
-export default function TodayColorBox() {
-  console.log('TodayColorBox -');
+  const StyledWrapper = styled.div`
+    margin-top: 50px;
+    width: 100%;
+    height: 70px;
+    background-color: ${({ color }) => color ? `${color};` : `white;`};
+  `
 
-  const color = 'red';
+  export default function TodayColorBox() {
+    console.log('TodayColorBox');
+    console.log('[context] color');
 
-  return <StyledWrapper color={color}></StyledWrapper>
-};
+    const { color } = useContext(DataContext);
+
+    return <StyledWrapper color={color}></StyledWrapper>
+  };
