@@ -7,17 +7,19 @@
 
 
 ## Intorduce
-This project is just simple 'To Do List'.
-whiie using this app, 
-on the developer console
+This project is just simple 'To Do List'.<br>
+While using this app, <br>
+on the developer console<br>
 there will be page log which is using recoil.
 
+![image](https://user-images.githubusercontent.com/29941220/117567450-6900c180-b0f7-11eb-8407-ffa02b720ac8.png)
+
 ## Load
-(cmd) yarn
-(cmd) yarn start
+(cmd) yarn<br>
+(cmd) yarn start<br>
 (browser) http://localhost:3000
 
 ## Skills
-React
-Typescript
+React<br>
+Typescript<br>
 Recoil
