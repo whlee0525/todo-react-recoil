@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/todo-react-recoil/static/css/main.1ff4bbac.chunk.css",
+    "main.js": "/todo-react-recoil/static/js/main.cfd62812.chunk.js",
+    "main.js.map": "/todo-react-recoil/static/js/main.cfd62812.chunk.js.map",
+    "runtime-main.js": "/todo-react-recoil/static/js/runtime-main.3aaf2406.js",
+    "runtime-main.js.map": "/todo-react-recoil/static/js/runtime-main.3aaf2406.js.map",
+    "static/js/2.560a163c.chunk.js": "/todo-react-recoil/static/js/2.560a163c.chunk.js",
+    "static/js/2.560a163c.chunk.js.map": "/todo-react-recoil/static/js/2.560a163c.chunk.js.map",
+    "index.html": "/todo-react-recoil/index.html",
+    "static/css/main.1ff4bbac.chunk.css.map": "/todo-react-recoil/static/css/main.1ff4bbac.chunk.css.map",
+    "static/js/2.560a163c.chunk.js.LICENSE.txt": "/todo-react-recoil/static/js/2.560a163c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3aaf2406.js",
+    "static/js/2.560a163c.chunk.js",
+    "static/css/main.1ff4bbac.chunk.css",
+    "static/js/main.cfd62812.chunk.js"
+  ]
+}
