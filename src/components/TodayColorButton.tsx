@@ -19,7 +19,6 @@ const StyledWrapper = styled.button`
 `
 
 export default function TodayColorBox({ color }: Props) {
-  console.log('color button -', color);
   console.log('[context] setColor');
 
   const { setColor } = useContext(DataContext);

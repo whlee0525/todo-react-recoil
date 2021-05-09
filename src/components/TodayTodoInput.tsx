@@ -19,7 +19,6 @@ const StyledButton = styled.button`
 `;
 
 export default function TodayTodoInput() {
-  console.log('TodayTodoInput');
   console.log('[context] setTodos');
 
   const { setTodos } = useContext(DataContext);

@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
 
 import TodayTodoLine from './TodayTodoLine';
@@ -13,17 +13,16 @@ const StyledWrapper = styled.div`
 `;
 
 export default function TodayTodoList() {
-  console.log('TodayTodoList');
   console.log('[context] todos');
 
-  const {todos, setTodos} = useContext(DataContext);
-  
+  const { todos, setTodos } = useContext(DataContext);
+
   // const handleClick = (selectedId) => setTodos(prev => prev.filter(({id})=> id !== selectedId));
 
   return (
     <StyledWrapper>
-        {!todos.length && 'No todos'}
-        {todos.map(line => <TodayTodoLine key={line.id} {...line}/>)}
-    </StyledWrapper> 
+      {!todos.length && 'No todos'}
+      {todos.map(line => <TodayTodoLine key={line.id} {...line} />)}
+    </StyledWrapper>
   );
 }

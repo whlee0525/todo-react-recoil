@@ -12,7 +12,6 @@ const StyledWrapper = styled.div`
 `;
 
 export default function TodayTodoLine({ content, done }: Props) {
-  console.log('TodayTodoLine');
   return (
     <StyledWrapper>
       {content}

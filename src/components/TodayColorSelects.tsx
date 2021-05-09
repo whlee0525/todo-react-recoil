@@ -7,12 +7,10 @@ const StyledWrapper = styled.div`
   background-color: #9ecbd1;
 `
 
-const COLORS = ['red','orange','yellow'];
+const COLORS = ['red', 'orange', 'yellow'];
 
 export default function TodayColorSelects() {
-  console.log('TodayColorSelects');
-
-  return(
+  return (
     <StyledWrapper>
       {COLORS.map(color => <TodayColorButton key={color} color={color} />)}
     </StyledWrapper>

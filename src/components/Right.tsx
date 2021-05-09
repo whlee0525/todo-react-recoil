@@ -14,11 +14,10 @@ const StyledRight = styled.div`
 `;
 
 export default function Right() {
-  console.log('Right');
   return (
     <StyledRight>
       <h1>Todos</h1>
-      <br/>
+      <br />
       <TodayTodoInput />
       <TodayTodoList />
     </StyledRight>

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 export default function Title() {
-  console.log('Title');
-  
+  console.log('[Page] Title');
+
   const [title, setTitle] = useState('Make own title');
 
   return (

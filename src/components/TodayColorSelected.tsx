@@ -11,7 +11,6 @@ const StyledWrapper = styled.div`
   `
 
 export default function TodayColorBox() {
-  console.log('TodayColorBox');
   console.log('[context] color');
 
   const { color } = useContext(DataContext);

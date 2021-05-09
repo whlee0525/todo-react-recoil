@@ -14,7 +14,6 @@ const StyledLeft = styled.div`
 
 
 export default function Left() {
-    console.log('Left');
     return (
         <StyledLeft>
             <h1>Feeling</h1>

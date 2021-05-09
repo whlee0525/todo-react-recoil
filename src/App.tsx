@@ -27,8 +27,6 @@ const MainContent = styled.div`
 `;
 
 export default function App() {
-  console.log('app');
-
   const [color, setColor] = useState<Color>('white');
   const [todos, setTodos] = useState<Todo[]>([]);
 
