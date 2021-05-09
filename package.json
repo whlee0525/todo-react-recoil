@@ -1,7 +1,7 @@
 {
   "name": "todo-react-context",
   "version": "0.1.0",
-  "homepage": "https://whlee0525.github.io/todo-react-context",
+  "homepage": "https://whlee0525.github.io/todo-react-recoil",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",

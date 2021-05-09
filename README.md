@@ -1,7 +1,7 @@
 # To Do List (for practice React-Context)
 
 ## Summary
-[Try App](https://whlee0525.github.io/todo-react-context/)
+[Try App](https://whlee0525.github.io/todo-react-recoil/)
 
 
 ## Intorduce
