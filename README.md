@@ -1,4 +1,4 @@
-# To Do List (for practice React-Context)
+# To Do List (for practice React-Recoil)
 
 ## Summary
 [Try App](https://whlee0525.github.io/todo-react-recoil/)
@@ -8,7 +8,7 @@
 This project is just simple 'To Do List'.
 whiie using this app, 
 on the developer console
-there will be page log which is using context.
+there will be page log which is using recoil.
 
 ## Load
 (cmd) yarn
@@ -18,3 +18,4 @@ there will be page log which is using context.
 ## Skills
 React
 Typescript
+Recoil

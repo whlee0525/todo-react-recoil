@@ -1,7 +1,8 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import { useSetRecoilState } from 'recoil';
+import { todosState } from '../states/atoms';
 
-import DataContext from '../DataContext';
 
 const StyledInput = styled.input`
   background-color: #9ecbd1;
@@ -19,9 +20,9 @@ const StyledButton = styled.button`
 `;
 
 export default function TodayTodoInput() {
-  console.log('[context] setTodos');
+  console.log('[recoil] setTodos');
 
-  const { setTodos } = useContext(DataContext);
+  const setTodos = useSetRecoilState(todosState);
 
   const [inputData, setInputData] = useState('');
 

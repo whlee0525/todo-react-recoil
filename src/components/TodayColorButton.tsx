@@ -1,7 +1,9 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styled from 'styled-components';
+import { useSetRecoilState } from 'recoil';
+
+import { colorState } from '../states/atoms';
 import { Color } from '../types';
-import DataContext from '../DataContext';
 
 interface Props {
   color: Color;
@@ -19,9 +21,9 @@ const StyledWrapper = styled.button`
 `
 
 export default function TodayColorBox({ color }: Props) {
-  console.log('[context] setColor');
+  console.log('[recoil] setColor');
 
-  const { setColor } = useContext(DataContext);
+  const setColor = useSetRecoilState(colorState);
 
   const handleClick = () => setColor(color);
 

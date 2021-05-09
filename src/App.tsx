@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
+import {RecoilRoot} from 'recoil';
 
-import DataContext from './DataContext';
 import Left from './components/Left';
 import Right from './components/Right';
 import Title from './components/Title';
-import { Todo, Color } from './types';
 
 const AppWrapper = styled.div`
   width: 1080px;
@@ -27,18 +26,16 @@ const MainContent = styled.div`
 `;
 
 export default function App() {
-  const [color, setColor] = useState<Color>('white');
-  const [todos, setTodos] = useState<Todo[]>([]);
 
   return (
     <AppWrapper>
       <Title />
-      <DataContext.Provider value={{ color, setColor, todos, setTodos }} >
+      <RecoilRoot >
         <MainContent>
           <Left />
           <Right />
         </MainContent>
-      </DataContext.Provider>
+      </RecoilRoot>
     </AppWrapper>
   );
 };

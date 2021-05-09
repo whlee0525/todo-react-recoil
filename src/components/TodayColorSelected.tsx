@@ -1,7 +1,7 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-
-import DataContext from '../DataContext';
+import { useRecoilValue } from 'recoil';
+import { colorState } from '../states/atoms';
 
 const StyledWrapper = styled.div`
     margin-top: 50px;
@@ -11,9 +11,9 @@ const StyledWrapper = styled.div`
   `
 
 export default function TodayColorBox() {
-  console.log('[context] color');
+  console.log('[recoil] color');
 
-  const { color } = useContext(DataContext);
+  const color = useRecoilValue(colorState);
 
   return <StyledWrapper color={color}></StyledWrapper>
 };

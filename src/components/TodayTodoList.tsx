@@ -1,8 +1,9 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styled from 'styled-components';
+import { useRecoilState } from 'recoil';
+import { todosState } from '../states/atoms';
 
 import TodayTodoLine from './TodayTodoLine';
-import DataContext from '../DataContext';
 
 
 const StyledWrapper = styled.div`
@@ -13,9 +14,9 @@ const StyledWrapper = styled.div`
 `;
 
 export default function TodayTodoList() {
-  console.log('[context] todos');
+  console.log('[recoil] todos');
 
-  const { todos, setTodos } = useContext(DataContext);
+  const [ todos, setTodos ] = useRecoilState(todosState);
 
   const handleRemove = (selectedId: number) =>
     setTodos(prev => prev.filter(({ id }) => id !== selectedId));
