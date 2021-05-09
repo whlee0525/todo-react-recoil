@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import styled from 'styled-components';
 
-import { DataContext } from '../DataContext';
+import DataContext from '../DataContext';
 
 const StyledInput = styled.input`
   background-color: #9ecbd1;
@@ -27,7 +27,7 @@ export default function TodayTodoInput() {
   const [inputData, setInputData] = useState('');
 
   const handleClick = () => {
-    const newTodo = {id: new Date().getUTCMilliseconds(), content: inputData, done: false};
+    const newTodo = { id: new Date().getUTCMilliseconds(), content: inputData, done: false };
     setTodos(prev => [...prev, newTodo]);
     setInputData('');
   }

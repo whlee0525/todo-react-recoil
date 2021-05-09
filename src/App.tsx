@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import { DataContext } from './DataContext';
+import DataContext from './DataContext';
 import Left from './components/Left';
 import Right from './components/Right';
 import Title from './components/Title';
+import { Todo, Color } from './types';
 
 const AppWrapper = styled.div`
   width: 1080px;
@@ -28,8 +29,8 @@ const MainContent = styled.div`
 export default function App() {
   console.log('app');
 
-  const [color, setColor] = useState('white');
-  const [todos, setTodos] = useState([]);
+  const [color, setColor] = useState<Color>('white');
+  const [todos, setTodos] = useState<Todo[]>([]);
 
   return (
     <AppWrapper>

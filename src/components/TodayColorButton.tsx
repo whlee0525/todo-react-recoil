@@ -1,7 +1,11 @@
-import React, { useContext } from 'react'
-import styled from 'styled-components'
+import React, { useContext } from 'react';
+import styled from 'styled-components';
+import { Color } from '../types';
+import DataContext from '../DataContext';
 
-import { DataContext } from '../DataContext';
+interface Props {
+  color: Color;
+}
 
 const StyledWrapper = styled.button`
   margin: 10px;
@@ -14,7 +18,7 @@ const StyledWrapper = styled.button`
   cursor: pointer;
 `
 
-export default function TodayColorBox({ color }) {
+export default function TodayColorBox({ color }: Props) {
   console.log('color button -', color);
   console.log('[context] setColor');
 

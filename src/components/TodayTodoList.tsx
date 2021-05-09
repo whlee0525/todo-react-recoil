@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import styled from 'styled-components';
 
 import TodayTodoLine from './TodayTodoLine';
-import { DataContext } from '../DataContext';
+import DataContext from '../DataContext';
 
 
 const StyledWrapper = styled.div`

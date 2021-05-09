@@ -18,7 +18,7 @@ export default function Left() {
     return (
         <StyledLeft>
             <h1>Feeling</h1>
-            <br/>
+            <br />
             <TodayColorSelects />
             <TodayColorSelected />
         </StyledLeft>
